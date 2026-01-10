@@ -22,7 +22,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }
     
     // In a real implementation, you would send this data to a server
-    // For now, just show a success message
+    // just show a success message
     alert(`Thank you, ${name}! Your message has been sent. I'll get back to you at ${email} as soon as possible.`);
     
     // Reset form
