@@ -1,102 +1,138 @@
 // Resume Download Functionality
 function downloadResume() {
-    const resumeContent = `
-        WELDON LANGAT - DATA SCIENTIST
-        =================================
-        
-        CONTACT INFORMATION
-        --------------------
-        Email: weldon.langat@example.com
-        Phone: +254 700 000 000
-        Location: Nairobi, Kenya
-        LinkedIn: linkedin.com/in/weldonlangat
-        GitHub: github.com/weldonlangat
-        
-        SUMMARY
-        -------
-        Data Scientist with 4+ years of experience in building predictive models, 
-        implementing machine learning solutions, and extracting insights from complex 
-        datasets. Specialized in Python, machine learning, data visualization, and 
-        cloud technologies.
-        
-        EDUCATION
-        ---------
-        MSc Data Science | University of Nairobi (2021-2024)
-        - Specialized in Machine Learning, Statistical Analysis
-        - Graduated with Distinction (GPA: 3.9/4.0)
-        
-        BSc Computer Science | Kenyatta University (2017-2021)
-        - Major in Artificial Intelligence and Data Mining
-        - First Class Honors
-        
-        CERTIFICATIONS
-        --------------
-        • Google Data Analytics Certificate (2023)
-        • Microsoft Azure Data Scientist Associate (2022)
-        • AWS Certified Machine Learning Specialist (2022)
-        
-        EXPERIENCE
-        ----------
-        Senior Data Scientist | DataInsight Solutions (2025-Present)
-        - Lead machine learning initiatives for client projects
-        - Developed predictive models for financial forecasting
-        - Mentored junior data scientists
-        
-        Data Scientist | TechAnalytics Inc. (2022-2025)
-        - Built recommendation systems for e-commerce clients
-        - Implemented NLP pipelines for healthcare applications
-        - Improved operational efficiency by 30%
-        
-        Data Science Intern | AI Research Lab (2024)
-        - Researched novel ML algorithms for time series forecasting
-        - Published research paper on anomaly detection
-        
-        TECHNICAL SKILLS
-        ----------------
-        • Programming: Python, R, SQL, Java
-        • Machine Learning: Scikit-learn, TensorFlow, PyTorch, XGBoost
-        • Data Visualization: Tableau, Power BI, Matplotlib, Seaborn
-        • Big Data: Apache Spark, Hadoop, Kafka
-        • Cloud Platforms: AWS, Azure, Google Cloud
-        • Databases: PostgreSQL, MongoDB, MySQL
-        
-        PROJECTS
-        --------
-        Healthcare Predictive Analytics (98% accuracy)
-        - ML model predicting patient readmission risks
-        - Reduced hospital costs by 15%
-        
-        E-commerce Recommendation System
-        - Increased sales by 25% for online retailer
-        - Collaborative filtering implementation
-        
-        Financial Fraud Detection System
-        - 99.5% precision in identifying fraudulent transactions
-        - Reduced false positives by 60%
-    `;
+    // Use the exact path to your uploaded file
+    const resumeFilePath = '/Documents/Weldon_Langat_kipkurui.pdf';
     
-    // Create a blob and download link
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
+    // Create a download link
     const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Weldon_Langat_Resume.txt';
+    a.href = resumeFilePath;
+    a.download = 'Weldon_Langat_Resume.pdf'; // This will be the downloaded filename
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    URL.revokeObjectURL(url);
     
-    // Show confirmation
-    alert('Resume download started! In a real implementation, this would download a PDF file.');
+    // Show success message
+    showNotification('Resume downloaded successfully!', 'success');
 }
 
-// Attach resume download functionality to buttons
-document.getElementById('downloadResume').addEventListener('click', function(e) {
-    e.preventDefault();
-    downloadResume();
-});
+// Optional: Enhanced version with error handling
+function downloadResume() {
+    try {
+        const resumeFilePath = '/Documents/Weldon_Langat_kipkurui.pdf';
+        const a = document.createElement('a');
+        
+        // Set the file path
+        a.href = resumeFilePath;
+        
+        // Set the download filename (users will see this name)
+        a.download = 'Weldon_Langat_Resume.pdf';
+        
+        // For mobile devices
+        a.target = '_blank';
+        
+        // Add to page and trigger download
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        
+        // Show success message
+        showNotification('Download started! Check your downloads folder.', 'success');
+        
+    } catch (error) {
+        console.error('Download error:', error);
+        showNotification('Unable to download resume. Please try again.', 'error');
+    }
+}
 
-document.getElementById('heroResumeBtn').addEventListener('click', function(e) {
-    e.preventDefault();
-    downloadResume();
+// Notification function (optional but recommended)
+function showNotification(message, type) {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = 'resume-notification';
+    notification.textContent = message;
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 12px 24px;
+        background: ${type === 'success' ? '#10B981' : '#EF4444'};
+        color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        z-index: 1000;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        animation: slideIn 0.3s ease-out;
+    `;
+    
+    document.body.appendChild(notification);
+    
+    // Remove after 4 seconds
+    setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease-in';
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.parentNode.removeChild(notification);
+            }
+        }, 300);
+    }, 4000);
+}
+
+// Add CSS animations
+if (!document.querySelector('#notification-styles')) {
+    const style = document.createElement('style');
+    style.id = 'notification-styles';
+    style.textContent = `
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideOut {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+// Attach event listeners
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadBtn = document.getElementById('downloadResume');
+    const heroBtn = document.getElementById('heroResumeBtn');
+    
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            downloadResume();
+        });
+    }
+    
+    if (heroBtn) {
+        heroBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            downloadResume();
+        });
+    }
+    
+    // Optional: Add download button to any element with class "resume-download"
+    document.querySelectorAll('.resume-download').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            downloadResume();
+        });
+    });
 });
