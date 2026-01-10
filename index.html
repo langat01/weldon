@@ -256,26 +256,41 @@
             </div>
 
             <!-- Card 5: STATA & SPSS Certification -->
-            <div class="education-card fade-in" data-type="certification">
-                <div class="edu-icon">
-                    <i class="fas fa-chart-bar"></i>
-                </div>
-                <div class="edu-content">
-                    <div class="edu-header">
-                        <span class="cert-badge certification">Professional</span>
-                        <span class="edu-date">2022</span>
-                    </div>
-                    <h3 class="edu-title">STATA & SPSS Certification</h3>
-                    <p class="edu-institution">KEPSA Research Center</p>
-                    <p class="edu-description">Professional certification in statistical software packages STATA and SPSS for advanced data analysis and research.</p>
-                    <div class="edu-skills">
-                        <span class="skill-tag">STATA</span>
-                        <span class="skill-tag">SPSS</span>
-                        <span class="skill-tag">Research Analysis</span>
-                    </div>
-                    <span class="credential-id">Credential ID: KEPSA-STAT-SPSS</span>
-                </div>
-            </div>
+            <!-- Card 5: STATA & SPSS Certification -->
+<div class="education-card fade-in" data-type="certification">
+    <div class="edu-icon">
+        <i class="fas fa-chart-bar"></i>
+    </div>
+    <div class="edu-content">
+        <div class="edu-header">
+            <span class="cert-badge certification">Professional</span>
+            <span class="edu-date">2022</span>
+        </div>
+        <h3 class="edu-title">STATA & SPSS Certification</h3>
+        <p class="edu-institution">KEPSA Research Center</p>
+        <p class="edu-description">
+            Professional certification in statistical software packages STATA and SPSS for advanced data analysis and research.
+        </p>
+        <div class="edu-skills">
+            <span class="skill-tag">STATA</span>
+            <span class="skill-tag">SPSS</span>
+            <span class="skill-tag">Research Analysis</span>
+        </div>
+        <span class="credential-id">Credential ID: KEPSA-STAT-SPSS</span>
+        <br>
+        <!-- Button to view the certificate JPEG -->
+        <button class="view-certificate-btn" onclick="openCertificate('Documents/spss.jpeg')">
+            View Certificate
+        </button>
+    </div>
+</div>
+
+<!-- Modal container -->
+<div id="certificateModal" class="modal">
+    <span class="close" onclick="closeCertificate()">&times;</span>
+    <img class="modal-content" id="certificateImg">
+</div>
+
 
             <!-- Card 6: Machine Learning Certification -->
             <div class="education-card fade-in" data-type="certification">
