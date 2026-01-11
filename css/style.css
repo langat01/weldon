@@ -1752,7 +1752,23 @@ footer {
         page-break-inside: avoid;
         margin: 20px 0;
     }
-    /* Add this to the end of your CSS file */
-.projects { padding-bottom: 40px !important; }
-.contact { padding-top: 40px !important; }
+ /* ===== FIX SPACING BETWEEN PROJECTS & CONTACT ===== */
+/* Reduce padding between sections */
+#projects {
+    padding-bottom: 40px !important; /* Reduced from 100px */
+}
+
+#contact {
+    padding-top: 40px !important; /* Reduced from 100px */
+}
+
+/* Remove any extra margins */
+.projects + .contact {
+    margin-top: 0 !important;
+}
+
+/* Ensure project grid doesn't create extra space */
+.projects-grid {
+    margin-bottom: 0 !important;
+}
 }
