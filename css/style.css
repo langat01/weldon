@@ -1517,6 +1517,26 @@ footer {
     transform: translateY(0);
 }
 
+/* ===== FIX SPACING BETWEEN PROJECTS & CONTACT ===== */
+/* Reduce padding between sections */
+#projects {
+    padding-bottom: 40px !important; /* Reduced from 100px */
+}
+
+#contact {
+    padding-top: 40px !important; /* Reduced from 100px */
+}
+
+/* Remove any extra margins */
+.projects + .contact {
+    margin-top: 0 !important;
+}
+
+/* Ensure project grid doesn't create extra space */
+.projects-grid {
+    margin-bottom: 0 !important;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1200px) {
     .container {
@@ -1752,23 +1772,4 @@ footer {
         page-break-inside: avoid;
         margin: 20px 0;
     }
- /* ===== FIX SPACING BETWEEN PROJECTS & CONTACT ===== */
-/* Reduce padding between sections */
-#projects {
-    padding-bottom: 40px !important; /* Reduced from 100px */
-}
-
-#contact {
-    padding-top: 40px !important; /* Reduced from 100px */
-}
-
-/* Remove any extra margins */
-.projects + .contact {
-    margin-top: 0 !important;
-}
-
-/* Ensure project grid doesn't create extra space */
-.projects-grid {
-    margin-bottom: 0 !important;
-}
 }
