@@ -1752,4 +1752,7 @@ footer {
         page-break-inside: avoid;
         margin: 20px 0;
     }
+    /* Add this to the end of your CSS file */
+.projects { padding-bottom: 40px !important; }
+.contact { padding-top: 40px !important; }
 }
