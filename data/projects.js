@@ -1,5 +1,17 @@
 // projects.js - Complete and Fixed Version
-
+async function loadProjects() {
+    try {
+        console.log('🔄 Starting loadProjects()');
+        console.log('Looking for projects grid:', document.getElementById('projectsGrid'));
+        
+        const response = await fetch('data/projects.json');
+        console.log('Fetch response status:', response.status);
+        
+        const data = await response.json();
+        console.log('Projects data received:', data);
+        console.log('Number of projects:', data.projects?.length);
+        
+        // ... rest of your code
 // Project data loaded from JSON
 let projectsData = {};
 
