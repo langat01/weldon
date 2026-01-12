@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weldon Langat - Data Scientist</title>
+    <title>Weldon Langat - Data Scientist & AI Specialist</title>
+    <meta name="description" content="Weldon Kipkurui Langat - Data Scientist & AI Specialist with expertise in machine learning, predictive analytics, and AI solutions">
+    <meta name="keywords" content="Data Scientist, Machine Learning, AI Specialist, Data Analysis, Python, Statistics, Kenya">
+    <meta name="author" content="Weldon Kipkurui Langat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Running Text Animation -->
     <div class="running-text-container">
         <div class="running-text">
-            <span>🚀 Data Scientist | 📊 Statistician | 🤖 Machine Learning Engineer | 📊 Data Analyst | 📈 AI Specialist | 💻 Python Developer | 🧠 Deep Learning | 🔍 Computer Vision | 📝 Natural Language Processing | ⚡ FastAPI | 🐳 Docker | ☁️ AWS | 🔥 PyTorch | 🎯 TensorFlow | 📉 Tableau | 💾 SQL | 📡 Apache Spark | 📚 Research | 🏆 98% Model Accuracy</span>
+            <span>🚀 Data Scientist | 📊 Statistician | 🤖 Machine Learning Engineer | 📊 Data Analyst | 📈 AI Specialist | 💻 Python Developer | 🧠 Deep Learning | 🔍 Computer Vision | 📝 NLP | ⚡ FastAPI | 🐳 Docker | ☁️ AWS | 🔥 PyTorch | 🎯 TensorFlow | 📉 Tableau | 💾 SQL | 📡 Apache Spark | 📚 Research | 🏆 98% Model Accuracy</span>
         </div>
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-content">
                 <a href="#" class="logo">Weldon</a>
                 <div class="nav-links">
                     <a href="#home">Home</a>
                     <a href="#stats">Achievements</a>
+                    <a href="#projects">Projects</a>
                     <a href="#services">Services</a>
                     <a href="#experience">Experience</a>
                     <a href="#education">Education</a>
@@ -34,19 +41,19 @@
                    class="btn" 
                    id="directDownload"
                    download="Weldon_Langat_Resume.pdf">
-                   <i class="fas fa-download"></i> Download Resume
+                   <i class="fas fa-download"></i> Resume
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" role="region" aria-label="Introduction">
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="greeting">Hi!, Welcome I'M</div>
+                    <div class="greeting">Hi, Welcome! I'M</div>
                     <h1>Weldon Kipkurui Langat</h1>
                     <h2>Data Scientist & AI Specialist</h2>
                     <p>I transform complex data into actionable insights, build predictive models, and develop AI solutions that drive business growth and innovation across industries.</p>
@@ -57,7 +64,7 @@
                            class="btn" 
                            id="heroResumeBtn"
                            download="Weldon_Langat_Resume.pdf">
-                           <i class="fas fa-download"></i> Download Resume
+                           <i class="fas fa-download"></i> Download CV
                         </a>
                     </div>
                 </div>
@@ -67,7 +74,9 @@
                             <img src="image/Screenshot 2025-10-12 182039.png" 
                                  alt="Weldon Kipkurui Langat - Data Scientist & Machine Learning Engineer" 
                                  class="profile-img"
-                                 loading="lazy">
+                                 loading="lazy"
+                                 width="300"
+                                 height="300">
                         </div>
                         <h3>Weldon Kipkurui Langat</h3>
                         <p>Data Scientist | Machine Learning Engineer</p>
@@ -92,7 +101,7 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="stats" id="stats">
+    <section class="stats" id="stats" role="region" aria-label="Achievements">
         <div class="container">
             <h2 class="section-title fade-in">Data Science Achievements</h2>
             <p class="section-subtitle fade-in">Quantifiable results from my data science projects and implementations</p>
@@ -124,154 +133,179 @@
             </div>
         </div>
     </section>
+
     <!-- Projects Section -->
-<section class="projects-section">
-  <div class="section-header">
-    <h2>Featured Projects</h2>
-    <p>Hands-on applications of data science and AI in real-world scenarios</p>
-  </div>
+    <section class="projects" id="projects" role="region" aria-label="Projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <p class="section-subtitle fade-in">Hands-on applications of data science and AI in real-world scenarios</p>
+            
+            <div class="projects-grid">
+                
+                <!-- Dragon Trading AI Dashboard -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Dragon Trading AI Dashboard</h3>
+                        <span class="project-date">2024</span>
+                    </div>
+                    <p class="project-description">
+                        Real-time crypto trading dashboard featuring live Binance data, candlestick and volume charts, 
+                        advanced technical indicators, and AI-powered price direction predictions with alerts.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">Binance API</span>
+                        <span class="tech-tag">Random Forest</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/langat01/crypto-ai-trader/blob/main/app.py" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://dragon-trading-ai-demo.streamlit.app" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
 
-  <div class="projects-grid">
-    
-    <!-- Dragon Trading AI Dashboard -->
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Dragon Trading AI Dashboard</h3>
-        <span class="project-date">2024</span>
-      </div>
-      <p class="project-description">
-        Real-time crypto trading dashboard featuring live Binance data, candlestick and volume charts, 
-        advanced technical indicators, and AI-powered price direction predictions with alerts.
-      </p>
-      <div class="tech-stack">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">Streamlit</span>
-        <span class="tech-tag">Plotly</span>
-        <span class="tech-tag">Binance API</span>
-        <span class="tech-tag">Random Forest</span>
-      </div>
-      <div class="project-links">
-       <a href="https://github.com/langat01/crypto-ai-trader/blob/main/app.py" class="project-link" target="_blank">
-                <i class="fab fa-github"></i> Code
-            </a>
-            <a href="https://dragon-trading-ai-demo.streamlit.app" class="project-link" target="_blank">
-                <i class="fas fa-external-link-alt"></i> Demo
-            </a>
-      </div>
-    </div>
+                <!-- Bank Analytics Dashboard -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Bank Analytics & Loan Performance Dashboard</h3>
+                        <span class="project-date">2024</span>
+                    </div>
+                    <p class="project-description">
+                        Data-driven Power BI dashboard built on SQL-based backend, analyzing customer churn, 
+                        loan performance, and transaction behavior across Kenya, Uganda, and Tanzania. 
+                        Enhanced decision-making accuracy by 18%.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Forecasting</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/langat01/SQL-POWERBI" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="pdf/Bank_Analytics_Report.pdf" target="_blank" class="project-link">
+                            <i class="fas fa-file-pdf"></i> Report
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Bank Analytics Dashboard -->
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Bank Analytics & Loan Performance Dashboard</h3>
-        <span class="project-date">2024</span>
-      </div>
-      <p class="project-description">
-        Data-driven Power BI dashboard built on SQL-based backend, analyzing customer churn, 
-        loan performance, and transaction behavior across Kenya, Uganda, and Tanzania. 
-        Enhanced decision-making accuracy by 18%.
-      </p>
-      <div class="tech-stack">
-        <span class="tech-tag">SQL</span>
-        <span class="tech-tag">Power BI</span>
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">Forecasting</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/langat01/SQL-POWERBI" 
-               target="_blank" class="project-link">
-                <i class="fab fa-github"></i> Code
-            </a>
-            <a href="pdf/Bank_Analytics_Report.pdf" 
-               target="_blank" class="project-link">
-                <i class="fas fa-file-pdf"></i> Report
-            </a>
-      </div>
-    </div>
+                <!-- Kenya Vehicle Tracking System -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Kenya Vehicle Tracking & Analytics System</h3>
+                        <span class="project-date">2023</span>
+                    </div>
+                    <p class="project-description">
+                        Real-time vehicle monitoring system using Streamlit and Folium to track speed, 
+                        location, and route compliance. Alerts for over-speeding and route-based filtering included.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Folium</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/langat01/vehicle-tracking-system" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://kenya-vehicle-tracking.streamlit.app" class="project-link" target="_blank">
+                            <i class="fas fa-play-circle"></i> Demo
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Kenya Vehicle Tracking System -->
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Kenya Vehicle Tracking & Analytics System</h3>
-        <span class="project-date">2023</span>
-      </div>
-      <p class="project-description">
-        Real-time vehicle monitoring system using Streamlit and Folium to track speed, 
-        location, and route compliance. Alerts for over-speeding and route-based filtering included.
-      </p>
-      <div class="tech-stack">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">Streamlit</span>
-        <span class="tech-tag">Folium</span>
-        <span class="tech-tag">Pandas</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/langat01/system.py" class="project-link" target="_blank">
-                <i class="fab fa-github"></i> Code
-            </a>
-            <a href="https://kenya-vehicle-tracking.streamlit.app" class="project-link" target="_blank">
-                <i class="fas fa-play-circle"></i> Demo
-      </div>
-    </div>
-
-    <!-- Predictive Maintenance System -->
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Predictive Maintenance System</h3>
-        <span class="project-date">2023</span>
-      </div>
-      <p class="project-description">
-        Machine learning model predicting equipment failures with 92% accuracy, 
-        reducing downtime by 40%. Features include anomaly detection and remaining useful life estimation.
-      </p>
-      <div class="tech-stack">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">TensorFlow</span>
-        <span class="tech-tag">Streamlit</span>
-        <span class="tech-tag">Docker</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/langat01/langat01.github.io/blob/main/yes.py" class="project-link" target="_blank">
+                <!-- Predictive Maintenance System -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Predictive Maintenance System</h3>
+                        <span class="project-date">2023</span>
+                    </div>
+                    <p class="project-description">
+                        Machine learning model predicting equipment failures with 92% accuracy, 
+                        reducing downtime by 40%. Features include anomaly detection and remaining useful life estimation.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/langat01/predictive-maintenance" class="project-link" target="_blank">
                             <i class="fab fa-github"></i> Code
                         </a>
                         <a href="https://langat01-turbofan-predictive-maintenance.streamlit.app" class="project-link" target="_blank">
-                            <i class="https://crypto-ai-trader-grnviftspaeor76wgzdkpc.streamlit.app/"></i> Demo
+                            <i class="fas fa-external-link-alt"></i> Demo
                         </a>
-      </div>
-    </div>
+                    </div>
+                </div>
 
-    <!-- Customer Segmentation -->
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Customer Segmentation Analysis</h3>
-        <span class="project-date">2023</span>
-      </div>
-      <p class="project-description">
-        K-means clustering analysis identifying 5 distinct customer personas with 92% silhouette score. 
-        Increased marketing campaign ROI by 35%.
-      </p>
-      <div class="tech-stack">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">Scikit-learn</span>
-        <span class="tech-tag">Tableau</span>
-        <span class="tech-tag">RFM Analysis</span>
-      </div>
-      <div class="project-links">
-          <a href="https://github.com/langat01/langat01.github.io/tree/main/customers.py" class="project-link" target="_blank">
-           <i class="fab fa-github"></i> Code
-         </a>
-         <a href="pdf/Customer_Segmentation_Report.pdf" class="project-link" download>
-            <i class="fas fa-file-pdf"></i> Report
-        </a>
-        
-      </div>
-    </div>
+                <!-- Customer Segmentation -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Customer Segmentation Analysis</h3>
+                        <span class="project-date">2023</span>
+                    </div>
+                    <p class="project-description">
+                        K-means clustering analysis identifying 5 distinct customer personas with 92% silhouette score. 
+                        Increased marketing campaign ROI by 35%.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Tableau</span>
+                        <span class="tech-tag">RFM Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/langat01/customer-segmentation" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="pdf/Customer_Segmentation_Report.pdf" class="project-link" download>
+                            <i class="fas fa-file-pdf"></i> Report
+                        </a>
+                    </div>
+                </div>
 
-  </div>
-</section>
+                <!-- Real-time Stock Predictor -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Real-time Stock Market Predictor</h3>
+                        <span class="project-date">2024</span>
+                    </div>
+                    <p class="project-description">
+                        LSTM neural network model for stock price prediction with 87% accuracy. 
+                        Real-time data fetching, sentiment analysis integration, and automated trading signals.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">LSTM</span>
+                        <span class="tech-tag">Yahoo Finance API</span>
+                        <span class="tech-tag">TensorFlow</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/langat01/stock-predictor" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://stock-predictor-demo.streamlit.app" class="project-link" target="_blank">
+                            <i class="fas fa-chart-line"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
+    <section class="services" id="services" role="region" aria-label="Services">
         <div class="container">
             <h2 class="section-title fade-in">How I Transform Data Into Value</h2>
             <p class="section-subtitle fade-in">I deliver data-driven solutions that extract insights, predict trends, and automate decision-making processes for businesses.</p>
@@ -283,6 +317,12 @@
                     </div>
                     <h3>Data Analysis & Visualization</h3>
                     <p>I analyze complex datasets and create interactive visualizations that uncover patterns, trends, and opportunities for business optimization across various domains.</p>
+                    <div class="service-tags">
+                        <span>Tableau</span>
+                        <span>Power BI</span>
+                        <span>Plotly</span>
+                        <span>Dashboarding</span>
+                    </div>
                 </div>
                 
                 <div class="service-card fade-in">
@@ -291,6 +331,12 @@
                     </div>
                     <h3>Machine Learning Models</h3>
                     <p>I build and deploy predictive models for forecasting, classification, and recommendation systems that enhance decision-making processes and automate workflows.</p>
+                    <div class="service-tags">
+                        <span>Predictive Analytics</span>
+                        <span>AI Solutions</span>
+                        <span>MLOps</span>
+                        <span>Model Deployment</span>
+                    </div>
                 </div>
                 
                 <div class="service-card fade-in">
@@ -299,13 +345,33 @@
                     </div>
                     <h3>Data Pipeline Engineering</h3>
                     <p>I design and implement robust data pipelines that efficiently collect, process, and transform data for analytics and machine learning applications at scale.</p>
+                    <div class="service-tags">
+                        <span>ETL/ELT</span>
+                        <span>Data Warehousing</span>
+                        <span>Apache Airflow</span>
+                        <span>Cloud Infrastructure</span>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Business Intelligence</h3>
+                    <p>I develop comprehensive BI solutions that transform raw data into strategic insights, enabling data-driven decision making across all organizational levels.</p>
+                    <div class="service-tags">
+                        <span>KPI Tracking</span>
+                        <span>Performance Metrics</span>
+                        <span>Strategic Reporting</span>
+                        <span>Data Storytelling</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Education & Certifications Section -->
-    <section class="education" id="education">
+    <section class="education" id="education" role="region" aria-label="Education and Certifications">
         <div class="container">
             <h2 class="section-title fade-in">Education & Certifications</h2>
             <p class="section-subtitle fade-in">My academic background and professional certifications in data science</p>
@@ -524,7 +590,7 @@
     </div>
 
     <!-- Experience Section -->
-    <section class="experience" id="experience">
+    <section class="experience" id="experience" role="region" aria-label="Professional Experience">
         <div class="container">
             <h2 class="section-title fade-in">Professional Experience</h2>
             <p class="section-subtitle fade-in">My journey in data science and analytics across various industries</p>
@@ -573,7 +639,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" role="region" aria-label="Contact Information">
         <div class="container">
             <h2 class="section-title fade-in">Get In Touch</h2>
             <p class="section-subtitle fade-in">Let's discuss how data science can solve your business challenges</p>
@@ -581,7 +647,7 @@
             <div class="contact-content">
                 <div class="contact-info fade-in">
                     <h3>Contact Information</h3>
-                    <p style="color: #a8b2d1; margin-bottom: 30px;">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+                    <p class="contact-intro">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
                     
                     <div class="contact-details">
                         <div class="contact-item">
@@ -669,7 +735,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div>
+                <div class="footer-col">
                     <a href="#" class="footer-logo">Weldon</a>
                     <p>Data Scientist & AI Specialist specializing in transforming data into business value through advanced analytics and machine learning.</p>
                     <div class="social-links">
@@ -680,17 +746,18 @@
                     </div>
                 </div>
                 
-                <div class="footer-links">
+                <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#stats">Achievements</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#experience">Experience</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-links">
+                <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
                         <li><a href="#services">Data Analysis</a></li>
@@ -700,9 +767,9 @@
                     </ul>
                 </div>
                 
-                <div class="footer-links">
+                <div class="footer-col">
                     <h4>Contact Info</h4>
-                    <ul>
+                    <ul class="footer-contact">
                         <li><i class="fas fa-envelope"></i> langatweldon665@gmail.com</li>
                         <li><i class="fas fa-phone"></i> +254 111203826</li>
                         <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
@@ -712,128 +779,20 @@
             
             <div class="copyright">
                 <p>&copy; 2025 Weldon Kipkurui Langat. All rights reserved.</p>
-                <p style="font-size: 0.9rem; margin-top: 10px; color: #8892b0;">Data Scientist | Statistician | Machine Learning Engineer</p>
+                <p class="copyright-sub">Data Scientist | Statistician | Machine Learning Engineer</p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- JavaScript Files -->
     <script src="js/main.js"></script>
     <script src="js/resume.js"></script>
     <script src="js/certifications.js"></script>
     <script src="js/contact.js"></script>
-    
-    <!-- Inline JavaScript for immediate functionality -->
-    <script>
-        // Simple scroll animation
-        document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Fade in animation on scroll
-            const fadeElements = document.querySelectorAll('.fade-in');
-            
-            const fadeInOnScroll = function() {
-                fadeElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    const elementVisible = 150;
-                    
-                    if (elementTop < window.innerHeight - elementVisible) {
-                        element.classList.add('visible');
-                    }
-                });
-            };
-            
-            fadeInOnScroll();
-            window.addEventListener('scroll', fadeInOnScroll);
-            
-            // Certificate modal functionality
-            const modal = document.getElementById('certificateModal');
-            const modalImg = document.getElementById('certificateImg');
-            const closeBtn = document.querySelector('.close');
-            
-            document.querySelectorAll('.view-certificate-btn').forEach(btn => {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const imagePath = this.getAttribute('data-certificate');
-                    
-                    if (imagePath && modal && modalImg) {
-                        modalImg.src = imagePath;
-                        modal.style.display = 'block';
-                        document.body.style.overflow = 'hidden';
-                    }
-                });
-            });
-            
-            if (closeBtn) {
-                closeBtn.addEventListener('click', function() {
-                    if (modal) {
-                        modal.style.display = 'none';
-                        document.body.style.overflow = 'auto';
-                    }
-                });
-            }
-            
-            if (modal) {
-                modal.addEventListener('click', function(e) {
-                    if (e.target === modal) {
-                        modal.style.display = 'none';
-                        document.body.style.overflow = 'auto';
-                    }
-                });
-            }
-            
-            // Close modal with Escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && modal && modal.style.display === 'block') {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            });
-        });
-        
-        // Contact form submission
-        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Simple validation
-            if (!name || !email || !subject || !message) {
-                alert('Please fill in all fields');
-                return;
-            }
-            
-            // Prepare email link
-            const mailtoLink = `mailto:langatweldon665@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Reset form
-            this.reset();
-            
-            // Show success message
-            alert('Thank you for your message! Your email client will open.');
-        });
-    </script>
 </body>
 </html>
