@@ -5,17 +5,17 @@
     --primary-dark: #1a0208;   /* Darker version of primary */
     --primary-light: #330410;  /* Lighter version */
     
-    /* Secondary Colors - Fixed typos */
-    --secondary: #0477aa;      /* Fixed from #0477a */
-    --secondary-dark: #036188; /* Darker teal/blue */
+    /* Secondary Colors - Changed from blue to green */
+    --secondary: #04aa47;      /* Changed from #0477aa to green */
+    --secondary-dark: #03681f; /* Changed from #036188 to darker green */
     
-    /* Accent Colors */
-    --accent: #0606d4;         /* Bright blue */
-    --accent-light: #1a1ae8;   /* Lighter accent */
+    /* Accent Colors - Changed from blue to green */
+    --accent: #06d406;         /* Changed from #0606d4 to bright green */
+    --accent-light: #1ae81a;   /* Changed from #1a1ae8 to lighter green */
     
-    /* Teal/Green */
-    --teal: #deffd4;           /* Light mint green */
-    --teal-dark: #b3e9a5;      /* Darker teal */
+    /* Teal/Green - Enhanced */
+    --teal: #d4ffde;           /* Light mint green - enhanced */
+    --teal-dark: #a5e9b3;      /* Darker teal - enhanced */
     
     /* Neutral Colors */
     --light: #fefafc;          /* Off-white */
@@ -26,7 +26,7 @@
     
     /* Glass Effects */
     --glass-bg: rgba(255, 255, 255, 0.1);
-    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-border: rgba(212, 255, 222, 0.3); /* Added green tint */
     
     /* Shadows and Effects */
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -97,7 +97,7 @@ p {
 
 /* ===== RUNNING TEXT ANIMATION ===== */
 .running-text-container {
-    background: linear-gradient(90deg, var(--accent), var(--secondary));
+    background: linear-gradient(90deg, var(--accent), var(--secondary)); /* Green gradient */
     color: white;
     padding: 12px 0;
     overflow: hidden;
@@ -176,7 +176,7 @@ p {
     justify-content: center;
     gap: 10px;
     padding: 12px 30px;
-    background: linear-gradient(135deg, var(--accent), var(--secondary));
+    background: linear-gradient(135deg, var(--accent), var(--secondary)); /* Green gradient */
     color: white;
     text-decoration: none;
     border-radius: 30px;
@@ -191,15 +191,15 @@ p {
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
-    background: linear-gradient(135deg, var(--accent-light), var(--secondary-dark));
+    background: linear-gradient(135deg, var(--accent-light), var(--secondary-dark)); /* Green hover */
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--teal-dark), var(--secondary));
+    background: linear-gradient(135deg, var(--teal-dark), var(--secondary)); /* Green */
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--teal), var(--secondary-dark));
+    background: linear-gradient(135deg, var(--teal), var(--secondary-dark)); /* Green hover */
 }
 
 /* ===== HERO SECTION ===== */
@@ -216,7 +216,7 @@ p {
     right: 0;
     bottom: 0;
     background: radial-gradient(circle at top right, var(--primary-light), transparent 50%),
-                radial-gradient(circle at bottom left, var(--secondary), transparent 50%);
+                radial-gradient(circle at bottom left, var(--secondary), transparent 50%); /* Green glow */
     z-index: -1;
 }
 
@@ -362,7 +362,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 20%, rgba(6, 6, 212, 0.1), transparent 50%);
+    background: radial-gradient(circle at 30% 20%, rgba(6, 212, 6, 0.1), transparent 50%); /* Green glow */
 }
 
 .section-title {
@@ -416,12 +416,12 @@ p {
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, var(--teal), var(--accent));
+    background: linear-gradient(90deg, var(--teal), var(--accent)); /* Green gradient */
 }
 
 .stat-card:hover {
     transform: translateY(-15px);
-    background: rgba(6, 6, 212, 0.15);
+    background: rgba(6, 212, 6, 0.15); /* Green tint */
     border-color: var(--accent);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
@@ -429,7 +429,7 @@ p {
 .stat-number {
     font-size: 4rem;
     font-weight: 800;
-    background: linear-gradient(90deg, var(--teal), var(--accent));
+    background: linear-gradient(90deg, var(--teal), var(--accent)); /* Green gradient */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -509,7 +509,7 @@ p {
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, var(--accent), var(--secondary));
+    background: linear-gradient(90deg, var(--accent), var(--secondary)); /* Green gradient */
 }
 
 .project-header {
@@ -555,7 +555,7 @@ p {
 .tech-tag {
     display: inline-block;
     padding: 6px 15px;
-    background: rgba(4, 119, 170, 0.15);
+    background: rgba(4, 170, 71, 0.15); /* Green tint */
     border: 2px solid var(--secondary);
     border-radius: 20px;
     font-size: 0.9rem;
@@ -564,7 +564,7 @@ p {
 }
 
 .tech-tag:hover {
-    background: rgba(4, 119, 170, 0.25);
+    background: rgba(4, 170, 71, 0.25); /* Darker green tint */
     transform: translateY(-3px);
 }
 
@@ -639,7 +639,7 @@ p {
     left: 0;
     right: 0;
     height: 0;
-    background: linear-gradient(to top, rgba(222, 255, 212, 0.1), transparent);
+    background: linear-gradient(to top, rgba(212, 255, 222, 0.1), transparent); /* Green gradient */
     transition: height 0.4s ease;
 }
 
@@ -737,13 +737,13 @@ p {
 }
 
 .cert-badge.ongoing {
-    background: rgba(222, 255, 212, 0.15);
+    background: rgba(212, 255, 222, 0.15);
     color: var(--teal);
     border: 2px solid var(--teal);
 }
 
 .cert-badge.degree {
-    background: rgba(6, 6, 212, 0.15);
+    background: rgba(6, 212, 6, 0.15); /* Green tint */
     color: var(--accent);
     border: 2px solid var(--accent);
 }
@@ -919,7 +919,7 @@ p {
     transform: translateX(-50%);
     width: 4px;
     height: 100%;
-    background: linear-gradient(to bottom, var(--teal), var(--accent));
+    background: linear-gradient(to bottom, var(--teal), var(--accent)); /* Green gradient */
     border-radius: 2px;
 }
 
@@ -976,7 +976,7 @@ p {
     font-weight: 700;
     font-size: 1.1rem;
     margin-bottom: 15px;
-    background: rgba(222, 255, 212, 0.1);
+    background: rgba(212, 255, 222, 0.1);
     padding: 8px 20px;
     border-radius: 20px;
     display: inline-block;
@@ -1161,7 +1161,7 @@ p {
 .form-control:focus {
     outline: none;
     border-color: var(--teal);
-    box-shadow: 0 0 0 4px rgba(222, 255, 212, 0.1);
+    box-shadow: 0 0 0 4px rgba(212, 255, 222, 0.1);
     background: rgba(0, 0, 0, 0.4);
 }
 
