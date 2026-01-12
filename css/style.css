@@ -169,6 +169,17 @@ p {
     transform: translateY(-2px);
 }
 
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--teal);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
 /* ===== BUTTONS ===== */
 .btn {
     display: inline-flex;
@@ -483,7 +494,7 @@ p {
 }
 
 .project-card {
-    background: var(--glass-bg);
+    background: rgba(37, 3, 11, 0.8); /* More opaque background for better visibility */
     backdrop-filter: blur(15px);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
@@ -499,7 +510,8 @@ p {
 .project-card:hover {
     transform: translateY(-10px);
     border-color: var(--accent);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Darker shadow for better contrast */
+    background: rgba(6, 212, 6, 0.1); /* Green tint on hover */
 }
 
 .project-card::before {
@@ -524,6 +536,7 @@ p {
     font-size: 1.5rem;
     line-height: 1.3;
     margin-right: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
 }
 
 .project-date {
@@ -543,6 +556,7 @@ p {
     margin-bottom: 25px;
     flex-grow: 1;
     font-size: 1.05rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); /* Added text shadow */
 }
 
 .tech-stack {
@@ -555,16 +569,18 @@ p {
 .tech-tag {
     display: inline-block;
     padding: 6px 15px;
-    background: rgba(4, 170, 71, 0.15); /* Green tint */
+    background: rgba(4, 170, 71, 0.25); /* More visible green tint */
     border: 2px solid var(--secondary);
     border-radius: 20px;
     font-size: 0.9rem;
-    color: var(--light-gray);
+    color: var(--light);
+    font-weight: 500;
     transition: var(--transition);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .tech-tag:hover {
-    background: rgba(4, 170, 71, 0.25); /* Darker green tint */
+    background: rgba(4, 170, 71, 0.35);
     transform: translateY(-3px);
 }
 
@@ -1313,8 +1329,38 @@ footer {
         right: auto;
     }
     
+    /* Mobile Navigation */
+    .menu-toggle {
+        display: block;
+    }
+    
     .nav-links {
-        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(37, 3, 11, 0.98);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+        border-bottom: 1px solid var(--glass-border);
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-links a {
+        padding: 12px 20px;
+        border-radius: 8px;
+        border: 1px solid var(--glass-border);
     }
     
     h1 {
