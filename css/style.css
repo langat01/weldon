@@ -596,10 +596,10 @@ p {
     justify-content: center;
     gap: 8px;
     padding: 10px 20px;
-    background: rgba(222, 255, 212, 0.15);
-    border: 2px solid var(--teal);
+    background: rgba(6, 212, 6, 0.15); /* Changed to green tint */
+    border: 2px solid var(--accent); /* Changed to green accent */
     border-radius: 25px;
-    color: var(--teal);
+    color: var(--accent); /* Changed to green accent */
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
@@ -607,9 +607,10 @@ p {
 }
 
 .link-btn:hover {
-    background: var(--teal);
-    color: var(--primary-dark);
+    background: var(--accent); /* Changed to green accent */
+    color: white; /* Changed to white for better contrast */
     transform: translateY(-3px);
+    border-color: var(--accent-light); /* Added border color change */
 }
 
 .link-btn i {
