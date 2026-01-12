@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
-    </head>
-    <body>
+</head>
+<body>
     <!-- Running Text Animation -->
     <div class="running-text-container">
         <div class="running-text">
@@ -25,7 +25,6 @@
                     <a href="#home">Home</a>
                     <a href="#stats">Achievements</a>
                     <a href="#services">Services</a>
-                    <a href="#projects">Projects</a>
                     <a href="#experience">Experience</a>
                     <a href="#education">Education</a>
                     <a href="#contact">Contact</a>
@@ -208,11 +207,11 @@
                             <span class="skill-tag">Statistical Analysis</span>
                             <span class="skill-tag">Data Science</span>
                             <span class="skill-tag">Programming</span>
-                            <br>
+                        </div>
+                        <br>
                         <button class="view-certificate-btn" data-certificate="Documents/Degree.jpeg">
                             <i class="fas fa-eye"></i> View Certificate
                         </button>
-                        </div>
                         <a href="https://www.mut.ac.ke" class="btn-tertiary" target="_blank" rel="noopener">
                             <i class="fas fa-external-link-alt"></i> University Website
                         </a>
@@ -379,67 +378,6 @@
         <div id="caption"></div>
     </div>
 
-    <!-- Project Details Modal -->
-    <div id="projectModal" class="project-modal">
-        <div class="project-modal-content">
-            <button id="closeProjectModal" class="project-modal-close-btn">
-                <i class="fas fa-times"></i>
-            </button>
-            
-            <div class="project-modal-header">
-                <h2 id="projectModalTitle">Project Title</h2>
-                <div class="project-modal-tech" id="projectTech"></div>
-            </div>
-            
-            <!-- Modal tabs -->
-            <div class="project-modal-tabs">
-                <button class="project-tab active" data-tab="overview">Overview</button>
-                <button class="project-tab" data-tab="features">Features</button>
-                <button class="project-tab" data-tab="report">Report</button>
-                <button class="project-tab" data-tab="code">Code</button>
-            </div>
-            
-            <!-- Tab contents -->
-            <div class="project-tab-content active" id="overviewTab">
-                <h3>Overview</h3>
-                <p id="projectOverview">Project overview will appear here...</p>
-            </div>
-            
-            <div class="project-tab-content" id="featuresTab">
-                <h3>Features</h3>
-                <ul id="projectFeatures"></ul>
-            </div>
-            
-            <div class="project-tab-content" id="reportTab">
-                <h3>Report Summary</h3>
-                <p id="projectReportSummary">Report summary will appear here...</p>
-                <h3>Impact</h3>
-                <p id="projectImpact">Project impact will appear here...</p>
-            </div>
-            
-            <div class="project-tab-content" id="codeTab">
-                <h3>Code Preview</h3>
-                <pre><code id="projectCode"># Code preview will appear here</code></pre>
-            </div>
-            
-            <!-- Project links -->
-            <div class="project-modal-links">
-                <a id="projectGitHubLink" href="#" target="_blank" class="project-link">
-                    <i class="fab fa-github"></i> GitHub Repository
-                </a>
-                <a id="liveDemoLink" href="#" target="_blank" class="project-link">
-                    <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a id="demoVideoLink" href="#" target="_blank" class="project-link">
-                    <i class="fas fa-video"></i> Demo Video
-                </a>
-                <a id="demoNotebookLink" href="#" target="_blank" class="project-link">
-                    <i class="fas fa-book"></i> Jupyter Notebook
-                </a>
-            </div>
-        </div>
-    </div>
-
     <!-- Experience Section -->
     <section class="experience" id="experience">
         <div class="container">
@@ -485,18 +423,6 @@
                         <li>Implemented NLP solutions for text classification with 89% accuracy</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title fade-in">Data Science Projects</h2>
-            <p class="section-subtitle fade-in">Real-world applications of data science and machine learning</p>
-            
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Project cards will be dynamically loaded from projects.json -->
             </div>
         </div>
     </section>
@@ -615,7 +541,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#stats">Achievements</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
                     </ul>
                 </div>
                 
@@ -650,7 +576,6 @@
     <script src="js/main.js"></script>
     <script src="js/resume.js"></script>
     <script src="js/certifications.js"></script>
-    <script src="js/projects.js"></script>
     <script src="js/contact.js"></script>
     
     <!-- Inline JavaScript for immediate functionality -->
